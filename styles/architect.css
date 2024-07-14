@@ -130,6 +130,7 @@ main > section{
     margin-top: 24px;
     margin-bottom: 100px;
   }
+
   /* responsive design styles */
   @media screen and (max-width: 576px) {
     .navbar, .nav-links, .teams{
@@ -141,6 +142,11 @@ main > section{
     .Our-features{
         margin: 20px auto;
     }
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 24px;
+    }
   }
   /* responsive for medium device */
   @media screen and (min-width: 576px) and (max-width:992px) {
@@ -149,5 +155,10 @@ main > section{
     }
     .Our-features{
         margin: 30px auto;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 24px;
     }
   }
