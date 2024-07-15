@@ -130,7 +130,20 @@ main > section{
     margin-top: 24px;
     margin-bottom: 100px;
   }
-
+  /* sponsor companies styles */
+  .sponsors-content{
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+  }
+  .sponsor-companies img{
+    filter: grayscale(100%);
+  }
   /* responsive design styles */
   @media screen and (max-width: 576px) {
     .navbar, .nav-links, .teams{
