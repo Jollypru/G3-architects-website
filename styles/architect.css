@@ -107,7 +107,7 @@ main > section{
   }
   .features{
     display: flex;
-    justify-content: space-between;
+    gap: 145px;
   }
   .features-content{
     max-width: 586px;
@@ -121,10 +121,23 @@ main > section{
   .feature-card .feature-card-title{
     font-weight: 600;
     font-size: 1.25rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
-  
+  .featured-image img{
+    width: 100%;
+  }
+  #experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -120px;
+  }
+  #experience-years{
+    font-size: 4rem;
+    font-weight: 700;
+  }
   /* some facts section styles */
   .facts-container{
     display: grid;
@@ -190,7 +203,7 @@ main > section{
   } */
   /* responsive design styles */
   @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features{
         flex-direction: column;
     }
     .team-img-container{
@@ -209,10 +222,14 @@ main > section{
       gap: 50px;
       justify-items: center;
     }
+    #experience-badge{
+      margin-left: 20px;
+      margin-top: 20px;
+    }
   }
   /* responsive for medium device */
   @media screen and (min-width: 576px) and (max-width:992px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .Our-features{
@@ -227,5 +244,9 @@ main > section{
       grid-template-columns: repeat(2, 1fr);
       gap: 50px;
       justify-items: center;
+    }
+    #experience-badge{
+      margin-left: 50px;
+      margin-top: 20px;
     }
   }
