@@ -186,21 +186,16 @@ main > section{
   }
 
   /* footer styles */
-  /* .footer{
+  .footer{
     max-width: 1440px;
-    height: 100px;
     margin: 0 auto;
     margin-top: 130px;
-    background-color: rgba(255, 244, 231, 1);
+    padding: 30px 0;
+    text-align: center;
+    background-color: #FFF4E7;
     color: #424242;
     font-size: 1.25rem;
-    text-align: center;
   }
-  .footer-content{
-    max-width: 620px;
-    margin: 38px auto;
-
-  } */
   /* responsive design styles */
   @media screen and (max-width: 576px) {
     .navbar, .nav-links, .teams, .features{
